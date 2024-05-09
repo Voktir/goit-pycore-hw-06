@@ -40,7 +40,7 @@ class AddressBook(UserDict):
     def add_record(self, record):
         print(self.data)
         print(str(record))
-        print(record)
+        print(record.name.value)
         self.data[Name] = record
         print(self.data)
         print("..............")
