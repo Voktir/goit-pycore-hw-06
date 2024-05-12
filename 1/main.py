@@ -105,21 +105,21 @@ for name, record in book.data.items():
     print(name)
     print(record)
 
-# # Знаходження та редагування телефону для John
-# john = book.find("John")
-# john.edit_phone("1234567890", "1112223333")
+# Знаходження та редагування телефону для John
+john = book.find("John")
+john.edit_phone("1234567890", "1112223333")
 
-# print(john)  # Виведення: Contact name: John, phones: 1112223333; 5555555555
+print(john)  # Виведення: Contact name: John, phones: 1112223333; 5555555555
 
-# # Пошук конкретного телефону у записі John
-# found_phone = john.find_phone("5555555555")
-# print(f"{john.name}: {found_phone}")  # Виведення: 5555555555
-# john.remove_phone("5555555555")
-# print(john)
+# Пошук конкретного телефону у записі John
+found_phone = john.find_phone("5555555555")
+print(f"{john.name}: {found_phone}")  # Виведення: 5555555555
+john.remove_phone("5555555555")
+print(john)
 
-# # Видалення запису Jane
-# book.delete("Jane")
+# Видалення запису Jane
+book.delete("Jane")
 
-# for name, record in book.data.items():
-#     print(name)
-#     print(record)
+for name, record in book.data.items():
+    print(name)
+    print(record)
